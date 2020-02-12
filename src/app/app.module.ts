@@ -15,11 +15,8 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
-import { KpiComponent } from './kpi/kpi.component';
-import { PivotTableComponent } from './pivot-table/pivot-table.component';
-import { PieChartComponent } from './pie-chart/pie-chart.component';
-import { VisualizationComponent } from './visualization/visualization.component';
-import { AreaChartComponent } from './area-chart/area-chart.component';
+import { KpiComponent } from './kpi/kpi.component'
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -32,13 +29,9 @@ import { AreaChartComponent } from './area-chart/area-chart.component';
         AlertComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
-,
-        KpiComponent ,
-        PivotTableComponent ,
-        PieChartComponent ,
-        VisualizationComponent ,
-        AreaChartComponent],
+        RegisterComponent,
+        KpiComponent
+    ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },

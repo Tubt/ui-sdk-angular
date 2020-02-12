@@ -22,7 +22,7 @@
     "@angular/forms": "~7.0.0",
     "@angular/http": "~7.0.0",
     "@angular/platform-browser": "~7.0.0",
-    "@angular/platform-browser-dynamic": "^7.0.2",
+    "@angular/platform-browser-dynamic": "^9.0.0",
     "@angular/router": "~7.0.0",
     "@gooddata/react-components": "^7.0.1",
     "@types/react": "^16.8.23",
